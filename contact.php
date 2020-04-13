@@ -89,7 +89,7 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Contactez-nous</h2>
+								<h2>Contactez-noeeus</h2>
 								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <span>Contact</span></p>
 							</div>
 						</div>
