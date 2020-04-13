@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Herbalife</title>
+	<title>No Limit Center</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -63,8 +63,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>Ayez un environnement sportif sain</h2>
-								<p>avec Herbalife, tout est possible.</p>
-								<p><a href="gallery.html" class="btn btn-primary btn-lg btn-custom">Get premium</a></p>
+								<p>avec No Limit Center, tout est possible.</p>
 							</div>
 						</div>
 					</div>
@@ -86,7 +85,7 @@
 			<div class="container">
 				<div class="row mobile-wrap">
 					<div class="col-md-5 animate-box">
-						<div class="mobile-img" style="background-image: url(images/mobile-2.jpg);"></div>
+						<div class="mobile-img" style="background-image: url(images/fondblanc.jpg);"></div>
 					</div>
 					<div class="col-md-7 animate-box">
 						<div class="desc">
@@ -118,7 +117,7 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5 animate-box">
 						<div class="desc">
-							<h2>Finish template creation</h2>
+							<h2>Compte-rendu rapide avec les coachs</h2>
 							<div class="features">
 								<span class="icon"><i class="icon-lightbulb"></i></span>
 								<div class="f-desc">
@@ -137,7 +136,35 @@
 									<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 								</div>
 							</div>
-							<p><a href="#" class="btn btn-primary btn-outline with-arrow">Start collaborating <i class="icon-arrow-right3"></i></a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mobile-wrap">
+					<div class="col-md-5 animate-box">
+						<div class="mobile-img" style="background-image: url(images/fondblanc.jpg);"></div>
+					</div>
+					<div class="col-md-7 animate-box">
+						<div class="desc">
+							<h2>Opportunité professionnelle</h2>
+							<div class="features">
+								<span class="icon"><i class="icon-bike"></i></span>
+								<div class="f-desc">
+									<p>Huic Arabia est conserta, ex alio latere Nabataeis contigua;Huic Arabia est conserta, ex alio latere Nabataeis contigua;</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-circle-compass"></i></span>
+								<div class="f-desc">
+									<p>Huic Arabia est conserta, ex alio latere Nabataeis contigua;Huic Arabia est conserta, ex alio latere Nabataeis contigua;</p>
+								</div>
+							</div>
+							<div class="features">
+								<span class="icon"><i class="icon-beaker"></i></span>
+								<div class="f-desc">
+									<p>Huic Arabia est conserta, ex alio latere Nabataeis contigua;Huic Arabia est conserta, ex alio latere Nabataeis contigua;</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

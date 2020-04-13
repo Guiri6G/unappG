@@ -63,7 +63,7 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>COACH [PRENOM & NOM ]</h2>
+								<h2>CHALLENGER [PRENOM & NOM ]</h2>
 							</div>
 						</div>
 					</div>
@@ -73,39 +73,27 @@
 
 		<div class="colorlib-about">
 			<div class="container">
-				<div class="row row-pb-lg">
-					<div class="col-md-6 animate-box">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Y3L-9IlsVcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="col-md-6 animate-box">
-						<h2>Qui suis-je ? </h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis leo mi, scelerisque et vehicula nec, mattis eu lacus. Pellentesque pulvinar urna eget sapien laoreet dignissim. Fusce sollicitudin sodales massa, id facilisis lectus rutrum in. Nam sed enim sodales diam finibus volutpat id et nibh. Donec purus erat, volutpat sit amet hendrerit at, fermentum eget orci. In lacinia et metus id fringilla. In lacinia nibh quis quam posuere faucibus. Suspendisse non magna vitae era.</p>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-14 col-md-offset-2 text-left colorlib-heading animate-box" style="margin-left: 2rem;">
 						<label>photo avant/après</label>&nbsp;&nbsp;
 						<img src="https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg" height="500px" width="310px"/>
 						<img src="https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg" height="500px" width="310px">
-						<label style="padding-left: 100px"> Toi aussi, tu peux y arriver !</label>
-						
+						<label style="padding-left: 100px"> Voilà, t'en fais des progrès !</label>
+					</div>
+                    <div class="col-md-14 col-md-offset-2 text-left colorlib-heading animate-box" style="margin-left: 2rem;">
+						<label>Fiche d'évaluation bien-être (EBE) :</label>&nbsp;&nbsp; <br/>
+						<label><a href="./res/pdf/pdf.pdf" title="Pdf">Fiche résumé du compte-rendu en PDF</a> </label>
 					</div>
 				</div>
 				<br><br>
-				<div class="row">
-					<div class="col-md-8 text-left animate-box">
-						<h2>Découvre mon quotidien</h2>
-						<br>
-						<a href="#" style="color: #7AC143;"><i class="fab fa-twitter fa-5x"></i> </a>
-						<a href="#" style="color: #7AC143; margin: 20px"><i class="fab fa-instagram fa-5x"></i> </a>
-						<a href="#" style="color: #7AC143;"><i class="fab fa-pinterest fa-5x"></i> </a>
-
-
-
-
+                <div class="col-md-14 col-md-offset-2 text-left colorlib-heading animate-box" style="margin-left: 2rem;">
+						<label>Mon évolution</label>&nbsp;&nbsp; <br/>
+                        <figure class="highcharts-figure">
+                            <div id="container"></div>
+                            <p class="highcharts-description">
+                            </p>
+                        </figure>
 					</div>
-					
-				</div>
 			</div>
 		</div>
 
@@ -136,7 +124,83 @@
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/series-label.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script type="text/javascript">
+Highcharts.chart('container', {
 
+    title: {
+        text: 'Mon évolution'
+    },
+
+    yAxis: {
+        title: {
+            text: 'en pourcentage'
+        }
+    },
+
+    xAxis: {
+        accessibility: {
+            rangeDescription: 'Range: 0 to 8'
+        }
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: true
+            },
+            pointStart: 1
+        }
+    },
+
+    series: [{
+        name: 'Poids',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Graisse corporelle',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: 'Masse musculaire',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: 'Âge métabolique',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'Hydratation',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    },
+    {
+        name: 'Graisse viscérale',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+		</script>
 	</body>
 </html>

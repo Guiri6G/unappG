@@ -4,7 +4,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.php">Herbalife</a></div>
+							<div id="colorlib-logo"><a href="index.php">No Limit Center</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -14,6 +14,7 @@
 								<li><a href="contact.php">Contactez-nous</a></li>
                 <?php ?>
 								<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><i class="fas fa-user"></i> Se connecter</a></li>
+                <li><a href="challenger.php">Mon profil</a></li>
 							</ul>
 						</div>
 					</div>
