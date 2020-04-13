@@ -1,7 +1,6 @@
 <?php
-
+session_start();
 include "connexion.php";
-
 $emailUtil = $_POST['email'];
 $password = $_POST['password'];
 
@@ -16,10 +15,9 @@ try{
 	if ($password == $donnees['mdpUtil']){
 
 
-		echo "yes";
-
 		$_SESSION['id'] = $donnees['id'];
 		$_SESSION['prenom'] = $donnees['prenomUtil'];
+		$_SESSION['nom'] = $donnees['nomUtil'];
 		$_SESSION['rang'] = $donnees['rangUtil'];
 
 		$etatCo = 1;

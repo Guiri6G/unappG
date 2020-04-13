@@ -1,3 +1,19 @@
+<?php 
+
+
+session_start();
+
+if (isset($_SESSION['id'])){
+
+if ($_SESSION['id'] != ""){
+    $id = $_SESSION['id'];
+    $prenom = $_SESSION['prenom'];
+    $nom = $_SESSION['nom'];
+    $rang = $_SESSION['rang'];
+
+}
+}
+?>
 <script src="https://kit.fontawesome.com/dc82b1705e.js" crossorigin="anonymous"></script>
 <nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
@@ -11,10 +27,22 @@
 								<li class="active"><a href="index.php">Accueil</a></li>
 								<li><a href="photo.php">Photo avant/après</a></li>
 								<li><a href="pro.php">Opportunité professionnelle</a></li>
-								<li><a href="contact.php">Contactez-nous</a></li>
-                <?php ?>
+								<li><a href="contact.php">Contact</a></li>
+                <?php if (empty($_SESSION['id'])){ ?>
+
 								<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><i class="fas fa-user"></i> Se connecter</a></li>
+
+                <?php } else if (!empty($_SESSION['id']) && $_SESSION['rang']==1){ ?>
+
                 <li><a href="challenger.php">Mon profil</a></li>
+                <li><a href="script/deconnexion.php">Déconnexion</a></li>
+
+                <?php } else if(!empty($_SESSION['id']) && $_SESSION['rang']==2){ ?> 
+
+                <li><a href="coach.php">Mon profil</a></li>
+                <li><a href="script/deconnexion.php">Déconnexion</a></li>
+
+                <?php } ?> 
 							</ul>
 						</div>
 					</div>

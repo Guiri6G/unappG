@@ -63,7 +63,7 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>CHALLENGER [PRENOM & NOM ]</h2>
+								<h2>CHALLENGER <?php echo $prenom." ".$nom ?> </h2>
 							</div>
 						</div>
 					</div>
