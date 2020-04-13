@@ -53,7 +53,7 @@
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<?php include 'navbar.php';?>
+		<?php include 'utilities/navbar.php';?>
 
 		<section id="home" class="video-hero" style="height: 700px; background-image: url(images/salle3.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="overlay"></div>
@@ -143,7 +143,7 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'footer.php' ; ?>
+		<?php include 'utilities/footer.php' ; ?>
 	</div>
 
 	<div class="gototop js-top">

@@ -8,10 +8,10 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="index.php">Accueil</a></li>
-								<li><a href="photo.php">Photo avant/après</a></li>
-								<li><a href="services.php">Opportunité professionnelle</a></li>
-								<li><a href="contact.php">Contactez-nous</a></li>
+								<li class="active"><a href="../index.php">Accueil</a></li>
+								<li><a href="./photo.php">Photo avant/après</a></li>
+								<li><a href="./pro.php">Opportunité professionnelle</a></li>
+								<li><a href="./contact.php">Contactez-nous</a></li>
 								<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><i class="fas fa-user"></i> Se connecter</a></li>
 							</ul>
 						</div>
@@ -31,7 +31,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form method="POST" action="script/login.php">
+      <form method="POST" action="./script/login.php">
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           

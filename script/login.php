@@ -1,6 +1,6 @@
 <?php
 
-include "../connexion.php";
+include "connexion.php";
 
 $emailUtil = $_POST['email'];
 $password = $_POST['password'];
