@@ -13,6 +13,7 @@
 								<li><a href="pro.php">Opportunité professionnelle</a></li>
 								<li><a href="contact.php">Contactez-nous</a></li>
 								<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><i class="fas fa-user"></i> Se connecter</a></li>
+                <li><a href="challenger.php">Mon profil</a></li>
 							</ul>
 						</div>
 					</div>
