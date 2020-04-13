@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 13 avr. 2020 à 16:37
+-- Généré le :  lun. 13 avr. 2020 à 19:10
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -60,14 +60,15 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `mdpUtil` varchar(255) NOT NULL,
   `rangUtil` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `utilisateur`
 --
 
 INSERT INTO `utilisateur` (`id`, `nomUtil`, `prenomUtil`, `emailUtil`, `mdpUtil`, `rangUtil`) VALUES
-(1, 'Kylian', 'MBappé', 'test@test.fr', 'azerty', 1);
+(1, 'Kylian', 'MBappé', 'test@test.fr', 'azerty', 1),
+(2, 'Bryant', 'Kobe', 'test2@test2.fr', 'azerty', 2);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
