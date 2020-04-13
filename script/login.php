@@ -40,8 +40,7 @@ catch(Exception $e){
 		print "Erreur ! ".$e->getMessage(). "<br/>"; 
 	}
 
-header('location : ../index.php');
-exit();	
+
 
 
 ?>
