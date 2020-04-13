@@ -12,6 +12,7 @@
 								<li><a href="photo.php">Photo avant/après</a></li>
 								<li><a href="pro.php">Opportunité professionnelle</a></li>
 								<li><a href="contact.php">Contactez-nous</a></li>
+                <?php ?>
 								<li><a href="" data-toggle="modal" data-target="#modalLoginForm" ><i class="fas fa-user"></i> Se connecter</a></li>
 							</ul>
 						</div>

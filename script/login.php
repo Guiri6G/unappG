@@ -24,9 +24,12 @@ try{
 
 		$etatCo = 1;
 
+
+		echo "<script type='text/javascript'>window.location.replace('../index.php');</script>";
+		
+
 	} else {
 
-		echo "non";
 		echo "<script type='text/javascript'>alert('Veuillez correctement vérifier la validité des informations saisies.');</script>";
 
 
@@ -40,7 +43,10 @@ catch(Exception $e){
 		print "Erreur ! ".$e->getMessage(). "<br/>"; 
 	}
 
-
-
-
 ?>
+
+<script type="text/javascript">
+<!--
+window.location.replace("../index.php");
+-->
+</script>
